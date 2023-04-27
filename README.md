@@ -93,7 +93,7 @@ mv linux-amd64/helm /usr/local/bin/helm
 minikube dashboard
 ```
 
-![image-20230427100503690](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230427100503690.png)
+![image-20230427100503690](images/2023-04/image-20230427100503690.png)
 
 虚拟机直接访问给出的link即可，如果要物理机访问好像是需要配置一下代理，这边直接虚拟机内访问即可。
 
