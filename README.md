@@ -50,7 +50,7 @@ minikube version
 minikube start --image-mirror-country='cn' --kubernetes-version=v1.23.8
 ```
 
-![vmware_JcBHvQRUEE](D:\blog\github\cloudSecurityLearn\images\2023-04\vmware_JcBHvQRUEE.png)
+![vmware_JcBHvQRUEE](../images/2023-04/vmware_JcBHvQRUEE.png)
 
 耐心等待即可配置完成。这里使用minikube内置的`kubectl`可以发现，已经配置了一个k8s的集群。
 
@@ -71,7 +71,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client --output=yaml
 ```
 
-![vmware_Bgw0R5ttH6](D:\blog\github\cloudSecurityLearn\images\2023-04\vmware_Bgw0R5ttH6.png)
+![vmware_Bgw0R5ttH6](../images/2023-04/vmware_Bgw0R5ttH6.png)
 
 #### 安装helm
 
@@ -85,7 +85,7 @@ mv linux-amd64/helm /usr/local/bin/helm
 
 验证
 
-![vmware_gL8ptKGVeC](D:\blog\github\cloudSecurityLearn\images\2023-04\vmware_gL8ptKGVeC.png)
+![vmware_gL8ptKGVeC](../images/2023-04/vmware_gL8ptKGVeC.png)
 
 #### 配置web界面
 
@@ -97,7 +97,7 @@ minikube dashboard
 
 虚拟机直接访问给出的link即可，如果要物理机访问好像是需要配置一下代理，这边直接虚拟机内访问即可。
 
-![vmware_aZRPpnXBE6](D:\blog\github\cloudSecurityLearn\images\2023-04\vmware_aZRPpnXBE6.png)
+![vmware_aZRPpnXBE6](../images/2023-04/vmware_aZRPpnXBE6.png)
 
 ### Kind
 
