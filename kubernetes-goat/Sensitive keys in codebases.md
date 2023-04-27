@@ -12,7 +12,7 @@
 
 ![msedge_2NCelWKPBs](../images/2023-04/msedge_2NCelWKPBs.png)
 
-从题干可以知道，可能用了git提交代码，这里面可能存在暴露的文件夹，例如**.git**。
+从题干可以知道，可能用了git提交代码，这里面可能存在暴露的文件夹，例如 .git 。
 
 访问`http://192.168.215.137:1230/.git/config`
 
@@ -30,7 +30,7 @@ python3 git_dumper.py http://192.168.215.137:1230/.git k8s-goat-git
 
 ![vmware_REgAc2iktG](../images/2023-04/vmware_REgAc2iktG.png)
 
-可以发现我们dump下来了一些文件，并且里面就有**.git**文件，这时候我们就可以用`git log`命令去查看它历史提交的commit
+可以发现我们dump下来了一些文件，并且里面就有 .git 文件，这时候我们就可以用`git log`命令去查看它历史提交的commit
 
 ```
 git log
@@ -48,7 +48,7 @@ git checkout d7c173ad183c574109cd5c4c648ffe551755b576
 
 这里面还保存着一个**.env**文件。
 
-![image-20230427113551033](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230427113551033.png)
+![vmware_O4iJNIox5m](../images/2023-04/vmware_nzy4nOppU7.png)
 
 查看**.env**文件拿到flag，同时这里面还保存着**aws_access_key_id**和**aws_secret_access_key**
 
