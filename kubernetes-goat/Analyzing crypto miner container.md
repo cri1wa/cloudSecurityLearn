@@ -6,7 +6,7 @@
 
 ## Solution
 
-关于挖矿病毒的溯源，在k8s的环境下，大致的溯源过程就是为`pod -> image -> image built command`。现在，就让我们来试试吧！
+关于挖矿病毒的溯源，在k8s的环境下，大致的溯源过程就是为`job/pod -> image -> image built command`。现在，就让我们来试试吧！
 
 ```
 kubectl get jobs
@@ -24,7 +24,7 @@ kubectl describe job batch-check-job
 
 可以看到利用了`madhuakula/k8s-goat-batch-check`这个镜像，通过`docker history`命令，我们可以查看这个镜像在哪里被创建了。
 
-通过**--no-trunc :**显示完整的提交记录。
+通过`--no-trunc :`显示完整的提交记录。
 
 ```
 docker history --no-trunc madhuakula/k8s-goat-batch-check
